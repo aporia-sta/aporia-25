@@ -41,6 +41,8 @@
 \usepackage[raggedright]{titlesec}
 % for WithSuffix
 \usepackage{suffix}
+% for list processing tools
+\usepackage{etoolbox}
 
 % Gap definitions
 \def \hangingindent {3em}
@@ -62,10 +64,10 @@
 \renewcommand{\chaptermark}[1]{%
 \markboth{#1}{}}
 \renewcommand{\headrulewidth}{0pt} % remove line under header
+
 % Define chapterauthor
 \newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
 \WithSuffix\newcommand\chapterauthor*[1]{\printchapterauthor{#1}}
-
 \makeatletter
 \newcommand{\printchapterauthor}[1]{%
     {\parindent0pt\vspace*{-25pt}%
@@ -81,7 +83,17 @@
     \addtocontents{toc}{\vskip5pt}%
 }
 \makeatother
-
+% Define acknowledgementlist
+\makeatletter
+\newcommand\acknowledgementlist[1]{%
+    \forcsvlist{\acknowledgementlist@item}{#1}
+}
+\newcommand\acknowledgementlist@item[1]{
+    \noindent#1%
+    \par
+    \vspace{\credgap}
+}
+\makeatother
 
 % MAIN
 \begin{document}
