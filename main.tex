@@ -7,7 +7,7 @@
 \author{University of St Andrews Philosophy Society}
 \date{2025}
 
-% Paper size
+% Paper size and margins
 \usepackage[
     a4paper,
     outer=1.625in,
@@ -22,6 +22,8 @@
 \usepackage{microtype}
 \usepackage{hanging}                    % For bibliographies
 \usepackage{ragged2e}
+% Columns
+\usepackage{multicol}
 % Include PDFs
 \usepackage[final]{pdfpages}
 % Links
@@ -39,6 +41,8 @@
 \usepackage{fancyhdr}
 % Headings
 \usepackage[raggedright]{titlesec}
+% for cftchapleader and cftdotsep in Table of Contents
+\usepackage{tocloft}
 % for WithSuffix
 \usepackage{suffix}
 % for list processing tools
@@ -52,6 +56,8 @@
 %   depth = 0 ; only display article entries in ToC (not other
 %   headings)
 \setcounter{tocdepth}{0}
+%   dots in the listing for chapters
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 % Heading styles
 \renewcommand\thesection{\arabic{section}}
 
@@ -100,9 +106,12 @@
 \frontmatter
 \include{00-titlepage}
 \include{01-foreword}
+\include{02-letter-ed}
+\include{03-acknowledgements}
 \tableofcontents
 
 \mainmatter
 
 \backmatter
+\include{90-contributors}
 \end{document}
