@@ -1,0 +1,746 @@
+
+\chapter{A Defence of the Interpretational Account of Validity}
+\chaptermark{A Defence of the Interpretational Account of Validity}
+\chapterauthor{Audrey Hammer,
+\textit{University of Cambridge}}
+
+\begin{quote}
+Both the interpretational account and the representational account
+provide contrasting accounts of validity for natural-language arguments.
+While the interpretational account captures formal validity, unlike the
+representational account, it does not capture materially valid
+arguments. Therefore, materially valid arguments are viewed as
+counterexamples to the interpretational account. I motivate why we may
+want to defend the interpretational account over the representational
+account and then proceed to defend the interpretational account using
+the suppressed premise strategy. The first objection to the suppressed
+premise strategy is by Stephen Read, who argues that the supressed
+premise is redundant. My contribution is to demonstrate how his
+objection fails. I also discuss and defend the suppressed premise
+strategy against other objections, which concern the nature of the
+supressed premise and the problem of modus ponens.
+\end{quote}
+
+\vspace{\credgap}
+
+\section*{Introduction}
+
+Validity, a key concept in logic, concerns whether an argument is
+truth-preserving. The interpretational account of validity defends the
+view that for an argument to be valid it must be formally valid. I turn
+first to the importance of logical form, its role in logic, generally,
+and validity, specifically. My discussion then moves to the
+interpretational account alongside its rival, the representational
+account. Both accounts face distinct issues. While I do not hold that
+the representational account is incoherent, I do hold that its
+formulation has weaknesses that are absent in the interpretational
+account, giving a motivation for preferring the latter rather than the
+former. Materially valid arguments, which are not formally valid,
+present counterexamples to the interpretational account. The remainder
+of the essay is devoted to showing how the suppressed premise strategy
+can defend the interpretational account against this main objection. The
+suppressed premise strategy will in turn be defended against pressing
+objections, primarily Stephen Read's objection that the suppressed
+premise is redundant. This objection to the supressed premise strategy
+aims to prove that there is a contradiction in adding a suppressed
+premise to an already materially valid argument, and my contribution is
+to show how this objection fails. I then go on to defend the suppressed
+premise strategy against a few other objections, including objections
+concerning the nature of the suppressed premise and the argument, and
+the problem of modus ponens. The result is a defence of the
+interpretational account of validity, using the suppressed premise
+strategy.
+
+\section*{Understanding the Relation Between Logical Form and Validity}
+
+Logic is considered the science of deduction: it deals with arguments
+and their validity. In formal logical languages, like truth functional
+logic and first order logic, we can capture validity using the standard
+notion of logical consequence. A formal argument is valid if the
+conclusion is a logical consequence of the premises. As Owen Griffiths
+and Alexander Paseau put it, ``A formal sentence $\phi$ is a logical
+consequence of a set of formal sentences $\gamma$ just if every model of $\gamma$ is a
+model of $\phi$''.\footnote{Owen Griffiths and Alexander Paseau, \emph{One
+  True Logic} (Oxford: Oxford University Press, 2022), 8.} Thus, we can
+describe the formal notion of validity for a logical language, using a
+model-theoretic notion of logical consequence.
+
+Once we have captured the notion of validity for logical languages, we
+can move on to understanding the concept of validity as applied to
+natural language, as the accounts of validity that will be discussed are
+accounts of validity for natural language. To understand validity as
+applied to natural language, we must introduce the concept of logical
+form. Logical form is generally considered to be a property of a
+sentence of natural language. The logical form of a sentence is when,
+keeping the logical constants fixed, the non-logical expressions get
+replaced with variables of the appropriate sort. Thus, the logical form
+of a sentence can be expressed using a schema. Given this schematic
+representation of form, we can follow Alfred Tarski in the view that
+logic is topic neutral, because a schema abstracts from the content of
+the sentence, only retaining the form of the sentence. For example, take
+the following sentence:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\item
+  Pigeons wear vests and cats wear hats.
+\end{enumerate}
+
+\noindent This sentence can be expressed using the following schema:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\item
+  A $\land$ B.
+\end{enumerate}
+
+\noindent This is because the logical expression in sentence (1) is ``and'' which
+can be formalised using the symbol ``$\land$'', and the non-logical
+expressions in the sentence are ``pigeons wear vests'' and ``cats wear
+hats'', and thus these expressions are replaced with variables.
+
+One stipulation with this account of logical form, is that it requires
+us to have an understanding of what a logical constant is. Thus far
+formality has been captured by its topic neutrality, and since a
+demarcation of logical notions is crucial to form, it makes sense to
+construct this demarcation using this quality of topic neutrality. Here
+we can invoke Tarski's account of isomorphism invariance. Tarski defines
+logical notions using an analogy from geometry. Just as we may demarcate
+particular geometrical objects by their invariance under
+transformations, so too can we demarcate logical notions. Thus, ``we
+call a notion 'logical' if it is invariant under all possible one-one
+transformations of the world onto itself''.\footnote{Alfred Tarski,
+  ``What are Logical Notions?,'' \emph{History and Philosophy of Logic}
+  7\emph{,} (1986), 149.} To explain this further, we can consider an
+isomorphism to be a bijective function, so between two structures there
+is a one-one mapping, which preserves all the relevant relations. This
+isomorphism is the transformation that Tarski is speaking of. For a
+relation to be isomorphic invariant it must remain unchanged over this
+sort of transformation. A relation that is isomorphic invariant is thus
+indifferent to individual objects. The only notions that do this are
+logical notions, and this confirms neutrality. Thus, we can define a
+logical notion as being isomorphically invariant and non-logical notions
+as not being isomorphically invariant. This allows for the demarcation,
+which is necessary to define logical form.
+
+This understanding of logical form can now aid us in capturing the
+notion of formal validity for natural language. It is common in the
+literature to equate an argument being formally valid with it being
+valid in virtue of its form.\footnote{Mark Sainsbury, \emph{Logical
+  Forms: An Introduction to Philosophical Logic}, (Oxford: Blackwell,
+  2001): 37.} However, using this as a definition for formal validity is
+unsatisfactory, for we still need to define being valid in virtue of
+form, which I find to be no more informative than formal validity.
+Therefore, I define formal validity to be the following: an argument is
+formally valid iff it has a form which has only valid instances. An
+example of a formally valid argument is:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{2}
+\item
+  All men are mortal, Socrates is a man $\therefore$ \ Socrates is mortal.
+\end{enumerate} 
+
+\noindent The logical form of the argument can be captured using a schema, as
+described above. Given the use of quantifiers in (3), the schema of the
+argument is simply its first order formalisation (on the obvious
+formalisation key):
+
+\begin{enumerate}[leftmargin=42] 
+
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{3}
+\item
+  $ \forall x(Fx \rightarrow Gx), \ Fa \ \therefore \ Ga.$
+\end{enumerate} 
+
+\noindent There are no invalid arguments with this form, therefore all the
+instances of this form are valid, consequently the argument is formally
+valid. It is clear from this explanation that this definition of
+validity for natural languages coincides with the definition for formal
+languages, meaning that a natural-language argument is formally valid
+iff its formalisation is valid.
+
+\section*{Two Accounts of Validity}
+
+We can now examine two model-theoretic accounts of validity for
+natural-language arguments. Generally, model-theoretic accounts of
+logical consequence are now viewed as more successful compared to other
+accounts of logical consequence, and the two accounts that are the focus
+of this essay are model-theoretic. As such the central thesis of both
+accounts understands logical consequence as concerning truth
+preservation across models.\footnote{This contrasts with proof-theoretic
+  accounts which hold that the nature of logical consequence involves
+  there being a proof from the premises to the conclusion.} The first
+account is the interpretational account of validity, which originates
+from Bolzano but was promulgated by Tarski.\footnote{Jc Beall, Greg
+  Restall, and Gil Sagi, ``Logical Consequence'', \emph{The Stanford
+  Encyclopaedia of Philosophy} (Summer 2024 Edition); Stephen Read,
+  ``Formal and Material Consequences'', \emph{Journal of Philosophical
+  Logic} 23, no. 3, (1994): 249.} This account holds that an argument is
+valid if there are no possible interpretations of the argument (except
+for a reserved class of logical interpretations) where the premises are
+true and the conclusion false. An interpretation of an argument is any
+argument that has the same logical form as the initial argument. The
+second account is the representational account of validity, which holds
+that an argument is valid if it is impossible for the premises to be
+true and the conclusion false.\footnote{Read, "Formal and Material
+  Consequences'', 250.}
+
+The interpretational account only accepts arguments that are formally
+valid. The account achieves this by examining different logical
+interpretations of the argument; if there is no interpretation that has
+true premises and a false conclusion then the argument is considered
+valid. On the other hand, the representational account allows for
+arguments that are materially valid, alongside those that are formally
+valid. Materially valid arguments are arguments in which the validity of
+the argument is in part due to the meaning of the non-logical terms
+involved. An example of a materially valid argument is:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{4}
+\item
+  Jill is a paediatrician $\therefore$ \ Jill is a doctor.
+\end{enumerate}
+
+\noindent The representational account intends to capture a more ``intuitive''
+notion of validity. Defenders of this account hold that materially valid
+arguments are contained within this intuitive notion of validity, and so
+an account of validity must capture material as well as formal validity.
+This belief is rooted in the idea that there is an analytic connection
+between certain words or phrases, and these connections make the
+argument valid, even though the argument is not formally valid.
+
+The main objection to the interpretational account is that it is subject
+to counterexamples, which take the form of materially but not formally
+valid arguments. To establish the success of the interpretational
+account we must meet this objection. One example of a materially but not
+formally valid argument is (5) above, and another is:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{5}
+\item
+  Adam is taller than Bill and Bill is taller than Cathy $\therefore$ \ Adam is
+taller than Cathy. 
+\end{enumerate}
+
+\noindent Neither of these arguments is formally valid, since there are invalid
+arguments with the same form as (5) and (6). The interpretational
+account would not accept that they are valid arguments given there are
+interpretations of (5) and (6) for which the premises are true and the
+conclusion false. A formalisation of these arguments in first order
+logic reveals their logical form:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{6}
+\item
+  $Fa \ \therefore \ Ga$ 
+\item 
+  $ (Tab \land Tbc) \ \therefore \ Tac $
+\end{enumerate}
+
+\noindent Another interpretation of each of these arguments demonstrates the point further:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{8}
+\item
+  Pat is a postman \ $\therefore$ \ Pat is a father.
+\item 
+  Alice is friends with Bonnie and Bonnie is friends with Carl \ $\therefore$ \ Alice is friends with Carl.
+\end{enumerate}
+
+\noindent These arguments are clearly invalid, yet they have the same logical form
+as (5) and (6), respectively. It is due to these alternative
+interpretations that (5) and (6) are not valid.
+
+However, the arguments (5) and (6) would be accepted under the
+representational account due to this account's use of modality. The
+representational account identifies logical consequence with
+metaphysical consequence. The reference to ``impossible'' in the
+representational account is a modal notion, whereas the interpretational
+account does not include such modal notions. The reference to ``no
+possible interpretations'' in the interpretational account may be made
+actual using substitutional classes, and thus does not need to rely on
+an analysis of modality.\footnote{Read, "Formal and Material
+  Consequences'', 252.} Yet, it is because of its use of modality that
+the representational account can attribute validity to (5) and (6), for
+there is no possible world where the premises of (5) and (6) are true
+and the conclusion false.
+
+On the other hand, modality is an issue for the representational
+account, for it requires that we have an analysis of
+modality.\footnote{It should be noted that this conversation concerns
+  analyses of the metaphysical notion of modality, which is distinct
+  from a discussion of modal logic, which is considered to be well
+  understood. Metaphysical modality deals with the fundamental nature of
+  modal notions, whereas modal logic is a formal system which reasons
+  about sentences containing modal operators.} Commonly, modality is
+cashed out in turns of possible worlds. This prompts the question of
+what a possible world is. The answers to this question are
+controversial. We have modal realists, like David Lewis, who endorse a
+view that possible worlds exist, as real concrete entities.\footnote{David
+  Lewis, \emph{On the Plurality of Worlds}, (Basil Blackwell, 1986) 2-3,
+  86.} Adopting this analysis for our account of validity would also
+mean adopting the ontological commitments of this account. Other
+analyses of modality include modal sceptics, who deny that modal
+statements can be known. In adopting this approach, we could not know
+whether our arguments are valid, which is entirely counterintuitive.
+While there are some more modest approaches to modality, like those
+taken by Stalnaker\footnote{Robert C. Stalnaker, ``Possible Worlds,''
+  \emph{Noûs} 10, no. 1, (1976): 65-75.} and Adams\footnote{Robert
+  Merrihew Adams, ``Theories of Actuality,'' \emph{Noûs} 8, no. 3,
+  (1974): 211-231.}, there are still issues surrounding whether these
+accounts can provide a reductive analysis. This is all to say that while
+modality is often invoked in philosophical topics, the debate
+surrounding modal notions is not uncontroversial, and thus any time it
+is invoked in a theory, that theory faces the same controversies. This
+is not to say that modal notions should never be used in philosophical
+theories, but just that we should be aware of the commitment and, all
+things being equal, adopt theories without modal notions. This gives us
+a motivation to prefer the interpretational account over the
+representational account. Indeed, Read, who accepts the representational
+account over the interpretational account, admits that the lack of modal
+notions in interpretational account is a possible motivation to prefer
+this account rather than the representational account.\footnote{Read,
+  "Formal and Material Consequences'', 252.}
+
+While this general criticism concerning the use of modal notions is
+important to note, there is a more specific problem with the
+representational account; namely, the identification of logical
+consequence with metaphysical consequence then provides no account of
+the importance of formality in logical consequence.\footnote{Beall,
+  Restall, and Sagi, ``Logical Consequence.''} Similarly, the account
+does not provide a basis for distinguishing between logical and
+non-logical vocabulary. This is because the representational account
+determines that all expressions used in the argument contribute to the
+validity of the argument. Consequently, the representational account
+undermines the topic neutrality of logic.
+
+Given that the representational account faces the above challenges, I
+suggest that this should motivate us to adopt the interpretational
+account instead. While I do not view these issues as being
+insurmountable, I simply hold that if there is an alternative we should
+favour it. If the problem of counterexamples to the interpretational
+account can be overcome, then this account becomes a preferrable
+alternative to the representational account of validity. I devote the
+remainder of this essay to considering and defending a possible solution
+the interpretational account can adopt to resolve the problem of
+counterexamples. This solution is the suppressed premise strategy.
+
+\section*{The Suppressed Premise Strategy}
+
+The suppressed premise strategy (hereafter SPS) can be employed by the
+interpretational account to overcome the problem of materially valid
+arguments. SPS holds that materially valid arguments have suppressed
+premises which when revealed make the argument formally valid, and thus
+valid under the interpretational account. These suppressed premises are
+true given they usually explicitly reveal true analytic connections
+between words.\footnote{Read views these suppressed premises not just as
+  true but as logically true because he associates logical truth with
+  analytic truth (Read, ``Formal and Material Consequences'', 258).
+  Since I have not made this association, I will avoid understanding
+  suppressed premises as logically true.} Since they are true, the
+addition of the suppressed premise is largely unproblematic, although
+this claim will be defended further.
+
+SPS applied to the argument (5) gives:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{10}
+\item
+  Jill is a paediatrician, all paediatricians are doctors $\therefore$ \ Jill is a doctor.
+\end{enumerate}
+
+\noindent This argument can be formalised as follows:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{11}
+\item
+  $Fa, \ \forall x(Fx \rightarrow Gx) \ \therefore \ Ga$
+\end{enumerate}
+
+
+\noindent There are no possible interpretations of the argument (11) that will
+have true premises and a false conclusion, thus under the
+interpretational account (11) is valid, although (5) remains invalid. Of
+course, this strategy applies to (6), where the suppressed premise is
+that ``taller than'' is transitive. No suppressed premise can be added
+to (9) or (10), since it is not true that all postmen are fathers, there
+is no analytic connection between being a postman and being a father,
+and the relation ``being friends with'' is not transitive.
+
+\subsection*{The Redundancy Objection}
+
+The first objection to SPS is put forward by Read and states that the
+suppressed premise is either false or redundant, and since it cannot be
+false it must be redundant. \footnote{Read, ``Formal and Material
+  Consequences," 257-9.} Read gives his argument as follows:
+
+\begin{quote}
+The extra premise is strictly redundant. For if the original argument
+were invalid, the added premise would not be logically true. Given that
+it is logically true, it follows that the unexpanded argument was
+already valid. Hence it was (logically) unnecessary to add the extra
+premise.\footnote{Read, "Formal and Material Consequences", 259.}
+\end{quote}
+
+\noindent This objection is best demonstrated using an example. Take argument (5),
+which is considered invalid under the interpretational account. Read
+says that because of its invalidity, it is possible for the premises of
+(5) to be true and the conclusion of (5) to be false. This entails that
+it is possible for Jill to be a paediatrician but not be a doctor. Yet
+the suppressed premise for this argument is that ``all paediatricians
+are doctors'', clearly contradicts the possibility Jill is a
+paediatrician and not a doctor. It follows if we accept that (5) is
+invalid, then we also accept that the suppressed premise is false. Yet
+this suppressed premise is true, so the initial assumption that (5) is
+invalid must be false, and therefore the addition of the suppressed
+premise is made redundant for it is not necessary for the argument to be
+considered valid. According to Read, the suppressed premise's redundancy
+means we should reject the interpretational account in favour of the
+representational account.
+
+Read's objection, while presented convincingly, lacks any actual force.
+This is due to a key error it makes: it presupposes the representational
+account, when it should presuppose the interpretational account. It is
+not the case that (5) is invalid because the premise ``Jill is a
+paediatrician'' is compatible with it being false that ``Jill is a
+doctor'', which (if true) is what the representational account would
+suppose, rather (5) is invalid because there is an interpretation of (5)
+for which the truth of the premises is compatible with the falsity of
+the conclusion. (9) is an interpretation of (5) for which it is
+compatible that it is true that ``Pat is a postman'' and false that
+``Pat is a father'', and therefore (5) is considered invalid under the
+interpretational account. Under the interpretational account, nothing
+specifically is said about the premises of (5), and so Read is wrong to
+infer that attributing invalidity to (5) will make the suppressed
+premise false. Since Read is wrong to assert that the invalidity of the
+argument shows the suppressed premise's falsity, he cannot then infer
+that since the suppressed premise is true, it must therefore be
+redundant. Under the representational account, invalidity is saying
+something about the specific premises of the argument under
+consideration. Yet under the representational account a materially valid
+argument, like (5), would not be considered invalid.
+
+Some may reply here that I am begging the question: why is it that we
+should assume the interpretational account and not the representational
+account? However, this line of thought is also mistaken. Read clearly
+starts by assuming that materially valid arguments are invalid, which is
+only the case under the interpretational account, not the
+representational account. From this assumption of invalidity, he
+attempts to prove a contradiction, but then uses the representational
+account's understanding of validity in this contradiction, even though
+the representational account would not attribute invalidity to something
+that is materially valid. However, if the interpretational account is
+used, then there is no contradiction in using SPS. In addition, this
+strategy is only used by the interpretational account. Thus, Read must
+assume the interpretational account if he is going to show a
+contradiction; given he does not use the interpretational account in his
+objection and that even if he did use the interpretational account there
+would be no contradiction, this implies that his objection holds no
+weight.
+
+\subsection*{Objections about the Nature of the Suppressed Premise and the
+Argument}
+
+A second problem for SPS is that we have not been committed to the view
+that the suppressed premise is logically true. This may lead to the
+question: why is it acceptable to add to an argument an extra premise
+that is not logically true? Surely only logically true propositions may
+be added to the premises of an argument to retain the same argument. To
+answer this question, an important point must be reiterated: I do not
+agree that the argument prior to the addition of the suppressed premise
+is the same argument as the argument after the addition of the
+suppressed premise. To me this point is obvious, for the two arguments
+have different properties: one argument is valid, the other invalid, and
+they have a different number of premises. Since we are speaking of two
+different arguments, I do not need to prove that the first argument is
+``retained'' in the second. However, this does not mean SPS can be used
+on any argument. If the premise ``all postmen are fathers'' is added to
+(9) then we have a new argument:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{12}
+\item
+  Pat is a postman, all postmen are fathers $\therefore$ \ Pat is a father.
+\end{enumerate}
+
+\noindent (13) is a valid argument, but we should not consider (13) to be using SPS. Therefore, we must identify what differentiates (11) from (13), and
+why (11) is determined as using SPS and thereby linking it closely with
+(5) in a way that (13) is not linked with (9). The difference is that
+the suppressed premise revealed in (11) that ``all paediatricians are
+doctors'' is true, but the premise ``all postmen are fathers'' is not
+true. Indeed ``all paediatricians are doctors'' is an analytic truth.
+However, it is not necessary that this be considered a logical truth. To
+begin with, there seems to be no necessity to consider analytic truths
+to be logical truths, particularly if we retain the commonly held view
+that logic has no special content. And secondly, the goodness of an
+argument can be characterised by whether it is sound, i.e., it is valid
+and has true premises, which does not require the premises to be
+logically true. So long as the suppressed premise is true, its addition
+to the argument does not hinder the chances of the argument being sound
+and should in fact improve this since the argument will now be formally
+valid. Since one of the characteristics of a suppressed premise is that
+it is true, there is no issue that it is not logically true. Considering
+(13), the premise ``all postmen are fathers'' cannot be a suppressed
+premise of the argument (9) for it is not true. Therefore, the
+suppressed premise does not need to be logically true, but this does not
+mean that SPS can be applied to any argument to make it valid.
+
+Moreover, we may consider that SPS might even allow us to consider
+contingent truths as suppressed premises. Let us suppose that it were a
+contingent fact that ``all postmen are fathers'', then it might make
+sense to consider this to be a suppressed premise of argument (9). Say
+Mr. Black presented argument (9) to Mr. White and both Mr. Black and Mr.
+White were aware that ``all postmen were fathers'', then the argument
+might be accepted as sound in the rhetoric (even though it is not
+formally valid) because both understood that the argument has a
+suppressed premise, and that Mr. Black in fact meant to make the
+argument (13). Now suppose Mr. Smith questioned the validity of the
+argument because he was not aware that it was a contingent fact that
+``all postmen were fathers''. Yet, once this would be revealed to him,
+Mr. Smith would certainly accept the validity of the argument.
+Therefore, we may accept that a suppressed premise may be contingently
+true, and it becomes clear that only truth, and not logical truth, is
+necessary for the suppressed premise.
+
+A counterexample to this argument has been pointed out to me.\footnote{By
+  Owen Griffiths, in personal communication.} This is that if we take
+the argument:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{13}
+\item
+  I am a philosophy student $\therefore$ \ puppies are cute.
+\end{enumerate}
+
+\noindent This is clearly invalid. But if the conditional ``If I am a philosophy
+student then puppies are cute'' is added as a suppressed premise to
+(14), then we get the new valid argument:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{14}
+\item
+  If I am a philosophy student then puppies are cute, I am a
+philosophy student $\therefore$ \ puppies are cute.
+\end{enumerate}
+
+\noindent It appears there is no problem with adding this conditional if we take
+the view that suppressed premises only need to be contingently true, and
+not analytically true, because considered as a material conditional it
+is true (the antecedent and consequent are true). This seems to be a
+problem for the strategy, as it might allow for many arguments like
+(14), that have true premises and true conclusions yet are not formally
+or materially valid, to be valid by adding these conditionals as
+suppressed premises.
+
+My response to this argument is to say that these conditionals are
+indicative conditionals, not material conditionals, which means they
+involve a different treatment. An indicative conditional is the
+conditional of natural language, and the current discussion is about the
+validity of natural-language arguments, so it makes sense to speak of
+indicative conditionals rather than material conditionals. We may then
+consider views of indicative conditionals which hold that their truth
+values are different to those of material conditionals, and as such we
+can formulate a view that holds that ``If I am a philosophy student then
+puppies are cute'' is false. For instance, we might hold that an
+indicative conditional is true iff it is assertable and is in turn
+assertable iff it passes the Ramsey test. The Ramsey test is a test for
+the assertability of a conditional, it holds that a conditional is
+assertable if someone were to add the antecedent to her set of
+suppositions, she would also have to add the consequent. ``If I am a
+philosophy student then puppies are cute'' would clearly fail the Ramsey
+test. Thus, we can still consider that the suppressed premise may be
+true without the above presenting as a counterexample.
+
+I have only given a rough sketch of a possible response to the objection
+suggested above, and while there are many problems with associating the
+truth conditions of an indicative conditional with those of the material
+conditional, there are still some who adopt this view. However, the
+conditional suggested is one where the antecedent and the consequent are
+both true and yet have nothing to do with each other. This sort of
+conditional is itself a problem case for someone who holds this
+truth-functional view of the indicative conditional, suggesting that
+there is something wrong with equating the indicative conditional with
+the material conditional. However, if the reader insists on the
+indicative conditional and the material conditional having the same
+truth value, even in cases where the antecedent and consequent have no
+relation to each other, then this reader may simply choose to reject
+this section on contingent truth and hold that the suppressed premise
+must be an analytic truth. This does not detract from the fact that the
+suppressed premise is not a logical truth. Of course, the reader may
+still object to the idea of analytic truth. However, this paper defends
+the interpretational account against the counterexample of material
+valid arguments, which themselves rely heavily on the notion of
+analyticity. So, if the reader places no importance on the analytic
+connections between words, then there is no forceful objection to the
+interpretational account and no need for SPS to begin with.
+
+A third objection connects to my answer to the second objection. I have
+stated that the two arguments, the argument prior to the addition of the
+suppressed premise and the argument after this addition, are two
+different arguments. This may lead one to ask, ``what connects the two
+arguments?'' The answer to this is simple: they both have the same aim.
+The aim of an argument is an imprecise and informal notion; however, I
+want to use it to capture an intuitive idea. The two arguments share the
+same conclusion, and their aim is to use true (and very similar)
+premises to arrive at this conclusion. Suppose that Jones is having a
+discussion of Jill's profession; he would be just as happy receiving the
+argument (11) as he would be receiving the argument (5), possibly even
+happier receiving (11) if he is unaware that a paediatrician is a kind
+of doctor (or if he is a logician who has a strong appreciation for
+formal validity). However, Jones would be disappointed if instead of
+receiving either of these arguments he received (3), for instance, which
+clearly has nothing to do with Jill or her profession. The aim of the
+arguments is informal, and the setting for which Jones might accept or
+reject them, as described, is also informal. The arguments are connected
+by this informality. The matter of validity in logic is strictly a
+formal matter, and thus there is a distinct difference between (5) and
+(11).
+
+\subsection*{The Problem of Modus Ponens}
+
+The final problem I shall explore in relation to SPS is the problem of
+modus ponens. A modus ponens is a deductive argument of the following
+form:
+
+\begin{enumerate}[leftmargin=42] 
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{15}
+\item
+  $A, \ A \rightarrow B \ \therefore \ B$
+\end{enumerate}
+
+\noindent Modus ponens is discussed by both Read and Timothy Smiley, in very
+different ways.\footnote{Read, "Formal and Material Consequences,"
+  259-62; Timothy Smiley, "A Tale of Two Tortoises", \emph{Mind} 104,
+  no. 496, (1995): 727.} They both view modus ponens as having a similar
+form to SPS but speak of different consequences related to this
+similarity. Below, I address both in turn.
+
+The problem that Read notes with modus ponens is that the major premise
+of this argument (16) is either false or redundant. While his discussion
+of this problem is limited, he links it with SPS by arguing that in both
+cases the additional premise ``adds psychological perspicuity
+{[}\ldots{]} But at the same time, it is not essential''.\footnote{Read,
+  "Formal and Material Consequences," 262.} To some extent I disagree
+with both points. Considering the second point, the suppressed premise
+and the major premise in the modus ponens argument are vital in making
+the argument valid, and thus are essential to the argument. On the first
+point, there is some sense in which adding the suppressed premise and
+the major modus ponens premise do add psychological perspicuity, but it
+does not necessarily always do this or do this to the extent Read may be
+suggesting. In cases where both parties implicitly know the suppressed
+premise, its addition to the argument may not provide any psychological
+clarity, only logical infallibility. This idea is strengthened when
+considering that most of the arguments we make in everyday life have
+suppressed premises and we do not seem to need to reveal these
+suppressed premises for psychological reasons.\footnote{Smiley, "A Tale
+  of Two Tortoises," 727.} Rather we tend to reveal suppressed premises
+for logical reasons. Given we are holding this discussion in the domain
+of logic, we may accept the resemblance between SPS and modus ponens
+while still rejecting Read's assertion of redundancy.
+
+Smiley's discussion of this matter refers to a paradox that seems to be
+presented by modus ponens and the addition of the suppressed premises.
+The paradox in question originated from Lewis Carroll, who wrote:
+
+\begin{quote}
+If I grant (A) All men are mortal, and (B) Socrates is a man, but not
+(C) The sequence "If all men are mortal, and if Socrates is a man, then
+Socrates is mortal" is valid, then I do not grant (Z) Socrates is
+mortal. Again, if I grant C, but not A and B, I still fail to grant Z.
+Hence, before granting Z, I must grant A and B and C. {[}Now consider{]}
+(D) If A and B and C be true, then Z is true.\footnote{Charles Lutwidge
+  Dodgson, \emph{Lewis Carroll's Symbolic Logic}, W. W. Bartley III,
+  ed., (Clarkson Potter, 1977), 472.}
+\end{quote}
+
+\noindent This becomes paradoxical when we observe an infinite regress occurring
+where we must grant (A), (B), (C), (D), and a further (E) If A and B and
+C and D be true, then Z is true, yet we can think of an infinite number
+of propositions that must be granted before it seems that Z is granted.
+We can view (C), (D), etc, as suppressed premises of the argument that
+Carroll reveals in his paradox. This leads Smiley to comment that
+``Lewis Carroll was doomed to detect suppressed hypothetical premises
+even in logically valid arguments, and incidentally to force them all
+into the straitjacket of modus ponens''.\footnote{Smiley, "A Tale of Two
+  Tortoises," 727.} If these are considered to be suppressed premises
+then there is a problem for SPS, for these can be added to any argument,
+and make the argument paradoxical. In addition, this does not seem to be
+what the strategy intends. To solve this, we can examine the
+characteristics of the suppressed premise, which is that its addition
+will make the argument formally valid. Yet the arguments that Lewis
+Carroll imagines are already valid arguments, thus SPS should not be
+employed in these cases. Smiley's examination of the problem also points
+out that the specific wording of the paradox is crucial for its
+paradoxical nature but is itself flawed. Lewis Carroll ``lacked any
+distinct conception of a deduction as opposed to the assertion'', and it
+is this confusion that leads to paradox. \footnote{Smiley, "A Tale of
+  Two Tortoises," 727.} By this Smiley means that (C) is not an
+assertion but a deduction, and so it must be granted, but Carroll seems
+to think that it is merely an assertion that can be accepted or denied.
+Hence, this paradox does not show that even valid arguments might have
+suppressed premises that lead to paradox, thus this objection presents
+no issue to the use of SPS.
+
+The characterisation I have given of SPS prevents contradiction and I
+have shown how it is able to overcome objections about the redundancy of
+the suppressed premise, as well as more generally the nature of the
+suppressed premise and the nature of the arguments to which it pertains.
+Finally, I discussed the problem of Modus Ponens, showing two ways it
+relates to SPS, and that this does not impact the use of the strategy.
+Thus, SPS is a viable addition to the interpretational account and
+explains the relation of material validity to validity, without a need
+to adopt the representational account. Hence by defence of the
+interpretational account succeeds and preferred to the representational
+account.
+
+\newpage  
+\section*{Bibliography}
+
+\refsection
+
+\begin{hangparas}{\hangingindent}{1}
+Adams, Robert Merrihew. ``Theories of Actuality.'' \emph{Noûs} 8, no. 3
+(1974), 211-231.
+
+Beall, Jc, Greg Restall, and Gil Sagi "Logical Consequence",~\emph{The
+Stanford Encyclopedia of Philosophy~}(Summer 2024 Edition), Edward N.
+Zalta \& Uri Nodelman~(eds.),
+\newline
+\url{https://plato.stanford.edu/archives/sum2024/entries/logical-consequence}
+
+Dodgson, Charles Lutwidge \emph{Lewis Carroll's Symbolic Logic}. W. W.
+Bartley III, ed. Clarkson Potter, 1997.
+
+Griffiths, Owen, and Alexander Paseau. 2022. \emph{On True Logic: A
+Monist Manifesto.} Oxford University Press, 2022.
+
+Lewis, David. \emph{On the Plurality of Worlds.} Basil Blackwell, 1986.
+
+Read, Stephen. ``Formal and Material Consequences.'' \emph{Journal of Philosophical Logic} 23,
+no. 3 (1994): 247-265.
+
+Sainsbury, Mark. \emph{Logical Forms: An
+Introduction to Philosophical Logic.} Blackwell, 2001.
+
+Smiley, Timothy. ``A Tale of Two Tortoises.'' \emph{Mind} 104, no. 416 (1995):
+725-736.
+
+Stalnaker, Robert C. "Possible Worlds." \emph{Noûs} 10, no. 1, (1976): 65-75.
+
+Tarski, Alfred. ``What are Logical Notions?''
+\emph{History and Philosophy of Logic} 7, 1986): 143-154.
+\end{hangparas}
