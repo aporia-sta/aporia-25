@@ -8,7 +8,8 @@ SOURCES=images/\
 		01-foreword.tex\
 		02-letter-ed.tex\
 		03-acknowledgements.tex\
-		90-contributors.tex
+		90-contributors.tex\
+		99-rear-cover.tex
 target:
 	mkdir target
 target/main.pdf: $(SOURCES)
