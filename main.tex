@@ -72,6 +72,11 @@
 \renewcommand{\chaptermark}[1]{%
 \markboth{#1}{}}
 \renewcommand{\headrulewidth}{0pt} % remove line under header
+\fancyhead{}
+\fancyhead[RO]{\chaptermark}
+\fancyhead[LE]{\small\sc Aporia Vol. 24}
+\fancyhead[RE]{\small\sc\itshape\leftmark}
+\fancyhead[LO]{\small\sc Aporia Vol. 24}
 
 % Define chapterauthor
 \newcommand\chapterauthor[1]{\authortoc{#1}\printchapterauthor{#1}}
