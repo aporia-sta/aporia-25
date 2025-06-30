@@ -17,6 +17,7 @@
 ]{geometry}
 % Fonts
 \usepackage{ebgaramond-maths}
+\usepackage{amsmath}
 \usepackage{amssymb}                    % Math symbols (e.g. therefore)
 \usepackage{enumitem}                   % indenting next line of list
 \usepackage[scale=0.78]{plex-mono}      % Monospace font
@@ -49,7 +50,10 @@
 \usepackage{suffix}
 % for list processing tools
 \usepackage{etoolbox}
-
+% for TikZ figures
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{trees}
 % Gap definitions
 \def \hangingindent {3em}
 \def \credgap {15pt}
@@ -121,6 +125,7 @@
 
 \mainmatter
 \include{papers/1}
+\include{papers/2}
 \include{papers/4}
 
 \backmatter
@@ -128,3 +133,8 @@
 \cleardoublepage
 \include{99-rear-cover}
 \end{document}
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: "../main"
+%%% End:
