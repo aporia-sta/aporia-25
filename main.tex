@@ -114,6 +114,51 @@
 % Define refsection
 \def \refsection {\newpage\section*{Bibliography}}
 
+% Packages required by paper 3
+
+\usepackage{graphicx}
+\usepackage{setspace}
+
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{turnstile}
+\usepackage{array}
+\usepackage{stmaryrd}
+\usepackage[normalem]{ulem}
+\usepackage{bussproofs}
+\usepackage[linguistics]{forest}
+\usepackage{tipa}
+\forestset{
+fairly nice empty nodes/.style={
+delay={where content={}
+{shape=coordinate, for siblings={anchor=north}}{}},
+for tree={s sep=4mm}
+}
+}
+\usepackage{gb4e}
+\usepackage{cgloss4e}
+\usepackage{drs}
+\usepackage[stable]{footmisc}
+\newcommand{\lsv}{\llbracket}
+\newcommand{\rsv}{\rrbracket}
+\newcommand{\la}{\leftarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ba}{\leftrightarrow}
+\newcommand{\Ba}{\Leftrightarrow}
+\newcommand{\lag}{\langle}
+\newcommand{\rag}{\rangle}
+\newcommand{\lam}{\lambda}
+\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+\DeclareMathSymbol{\strictif}{\mathrel}{symbolsC}{74}
+\DeclareMathSymbol{\boxright}{\mathrel}{symbolsC}{128}
+\DeclareMathSymbol{\boxRight}{\mathrel}{symbolsC}{136} % Lewis’s stronger ‘would’ counterfactual
+\DeclareMathSymbol{\diamondRight}{\mathrel}{symbolsC}{140} % Lewis’s stronger ‘might’ counterfactual
+\DeclareMathSymbol{\diamonddot}{\mathord}{symbolsC}{144} % Lewis’s inner necessity
+
 % MAIN
 \begin{document}
 \frontmatter
@@ -126,6 +171,7 @@
 \mainmatter
 \include{papers/1}
 \include{papers/2}
+\include{papers/3}
 \include{papers/4}
 
 \backmatter
