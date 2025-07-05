@@ -6,6 +6,7 @@
 \section{Introduction}
 In his book \emph{Modal Logic as Metaphysics}, Timothy Williamson developed a series of arguments against contingentism and in favor of necessitism. I outline the two theses in the following: 
 \begin{quote}
+
 (Contingentism) $\Diamond \exists x \Diamond \neg \exists y x=y$ \\
 Informally, some things could have not existed. \\
 ``The table could have been destroyed in the making process and therefore does not exist." \\
@@ -167,7 +168,7 @@ if AH is indeed true, then we can solve Williamson's Challenge. Consequently, th
 Now there is a problem if AH is not very plausible. If AH is not a compelling metaphysical thesis in the first place, contingentism will not fare well having to accept it.
 This is where many of Williamson's previous charges can be properly incorporated: skepticism about distinction between qualitative and non-qualitative properties, counterexamples from indiscernible objects, etc. The upshot is that now the dialectic cost for contingentism is no longer not being able to explain something but having to accept some controversial/implausible doctrine in order to be able to explain something. This seems to be a cost. Contingentists give themselves a greater burden compared to a necessitist that can remain neutral on this issue. 
 
-I am personally not very worried about combining a theory with another controversial theory in itself. Intuitively, theories should be allowed to appeal to other resources (like other theories) in developing and defending itself even if those resources are controversial. Denying the legitimacy of this appeal would render theorizing very difficult and limited. We want to establish connection between theories across domains and explore how they can inform each other.\footnote{I can give numerous examples. For example, expressivists in metaethics appeals to truth minimalism to recover the legitimacy of ordinary moral talk/thought, even if truth minimalism is controversial; non-naturalists appeals to post-modal/hyperintensional metaphysics in developing their theories, even if notions like grounding/essence invoked in hyperintensional metaphysics are very controversial.\autocite{bengson2024} I think they can make these appeals. Metaethicists have made a lot of progress by doing this. Their theorizing would just be very limited if they cannot do this. }
+I am personally not very worried about combining a theory with another controversial theory in itself. Intuitively, theories should be allowed to appeal to other resources (like other theories) in developing and defending itself even if those resources are controversial. Denying the legitimacy of this appeal would render theorizing very difficult and limited. We want to establish connection between theories across domains and explore how they can inform each other.\footnote{I can give numerous examples. For example, expressivists in metaethics appeals to truth minimalism to recover the legitimacy of ordinary moral talk/thought, even if truth minimalism is controversial; non-naturalists appeals to post-modal/hyperintensional metaphysics in developing their theories, even if notions like grounding/essence invoked in hyperintensional metaphysics are very controversial --- see Bengson, Cuneo, and Shafer-Landau, 2024. I think they can make these appeals. Metaethicists have made a lot of progress by doing this. Their theorizing would just be very limited if they cannot do this. }
 However, the real worry is whether this combination is the only viable combination (because we do not know which theory is ultimately right). That is, if contingentism can only be effectively defended relying on a particular theory of haecceities, then it looks less attractive than a view that is compatible with a variety of theories of haecceities. 
 Contingentism is not supposed to be a global thesis that aims to provide complete answers to all metaphysical questions. It is not even aiming to be a comprehensive theory of metaphysical modality. Necessitism is the same. Thus, one would hope that it can remain local instead of having global consequences. However, if it can only be a good local theory when combining with a particular (global) theory, then one should be more skeptical as this local theory seems to demand too much packaged in along with it. Necessitism in contrast is compatible with both haecceitism and AH.\footnote{This is exactly the same for expressivism and truth minimalism. Expressivism is meant to be a local thesis about moral language. However, to defend it, one would need to reject truth-conditional semantics (which is incompatible with truth minimalism) in general, then it no longer seems very attractive.}
 Thus, overall, while AH response is a good substantive explanation answering the Explanation Challenge, there will be considerable dialectical cost for contingentists to accept it.  
@@ -176,32 +177,42 @@ Thus, overall, while AH response is a good substantive explanation answering the
 In this paper, I have examined three responses to Williamson's Explanation Challenge and argued that each response faces their own problems. While I argue for the stronger conclusion that the first two challenges fail, I argue for the weaker conclusion that the last response succeeds but only with additional dialectical cost to contingentism. I hope this paper has helped to clarify the stake of Williamson's ``first horn" to contingentism in Chapter 6 and strengthen his argument against contingentism. 
 
 \section{Appendix}
-\textbf{Here is the proof for (Tracking)}:  \\
+
+\subsection{The proof for (Tracking)}
 First, we can observe the following proof: \\
+\begin{quote}
 $\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash \bot \  $(Reductio, Conditional proof, Universal generalization)$  \\
 \vdash \Box \forall x (Xx \ba x=y) \ra \Box \forall z \neg (Haec(X)(z) \wedge z \neq y) \ \ \ $(K)$\\
 \vdash \Box \forall x (Xx \ba x=y) \ra \neg \Diamond \exists z (Haec(X)(z) \wedge z \neq y)  $\ \ \ (Equivalence)$ \\
 \vdash Haec(X)(y) \ra Tra(X)(y) $ \\
+\end{quote}
 Now I will show the first line. \\
+\begin{quote}
 $\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash Xy \ba y=y \\
 \forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash Xy \ba z=y \\
 \forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash y=y \ba z=y \\
 \forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash z=y \\
 \forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash z \neq y \\
 \forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash \bot $ \\
+\end{quote}
 Then, from $\vdash Haec(X)(y) \ra Tra(X)(y)$, we can observe that: \\
+\begin{quote}
 $\vdash \Box Haec(X)(y) \ra \Box Tra(X)(y) \ \ \ \ $(K) $ \\
 \vdash \Box \forall x (Xx \ba x=y) \ra \Box \Box \forall x (Xx \ba x=y) \ \ \ \ $(\textbf{4})$\\
 \vdash Haec(X)(y) \ra \Box Haec(X)(y) \ \ \ \ $(Chaining conditionals)$ \\
 \vdash Haec(X)(y) \ra \Box Tra(X)(y)$ 
+\end{quote}
+\subsection{The proof for (o-Tracking)} 
 
-\textbf{Here is the proof for (o-Tracking)}: \\
+\begin{quote}
 $\vdash Haec(X)(o) \ra Tra(X)(o)$ \ \ \ \ (Proved above) \\
 $\vdash \exists X Haec(X)(o) \ra \exists X Tra(X)(o)$ \ \ \ \ (Derivable from $\forall$ rule) \\
 $\vdash \Box \exists X Haec(X)(o) \ra \Box \exists X Tra(X)(o)$ \ \ \ \ (K)\\
 $\vdash \Box \exists X Tra(X)(o)$ \ \ \ \ (MP, o-Haecceity) 
+\end{quote}
 
-I include these proofs in detail for two reasons. One, Williamson did not lay out the proof at all in the book. So I think reconstructing it here will help the reader to see clearly how the seemingly strong principles are derived. Second, and more importantly, this proof shows how little background logic is needed to derive the later-shown-to-be-problematic (Tracking). This proof assumes only modal logic principles \textbf{4} and \textbf{K}, and the usual meta-rules like conditional proof, reductio, etc. Thus, it  does not require a strong logic to prove (Tracking). The significance is that, suppose one accepts that (Tracking) has problematic consequences, one thing we can always see is if there is any logical principle we can reject which contributes to the proof. That would be a natural contingentist way out. However, this proof shows that it will not be easy to take this route. K is the least contentious axiom in modal logic; \textbf{4} is somewhat controversial, but not very, since intuitively, modal properties/facts should themselves be necessary and not mere accidental. Further, the controversial B axiom that actually bears on the necessitism and contingentists debates are not used essentially. Thus, there is not much reasonable/non-ad hoc room for contingentists to weaken their background logic to escape from Williamson's challenge. Williamson himself does not make this point, but I think it is important. 
+
+\noindent I include these proofs in detail for two reasons. One, Williamson did not lay out the proof at all in the book. So I think reconstructing it here will help the reader to see clearly how the seemingly strong principles are derived. Second, and more importantly, this proof shows how little background logic is needed to derive the later-shown-to-be-problematic (Tracking). This proof assumes only modal logic principles \textbf{4} and \textbf{K}, and the usual meta-rules like conditional proof, reductio, etc. Thus, it  does not require a strong logic to prove (Tracking). The significance is that, suppose one accepts that (Tracking) has problematic consequences, one thing we can always see is if there is any logical principle we can reject which contributes to the proof. That would be a natural contingentist way out. However, this proof shows that it will not be easy to take this route. K is the least contentious axiom in modal logic; \textbf{4} is somewhat controversial, but not very, since intuitively, modal properties/facts should themselves be necessary and not mere accidental. Further, the controversial B axiom that actually bears on the necessitism and contingentists debates are not used essentially. Thus, there is not much reasonable/non-ad hoc room for contingentists to weaken their background logic to escape from Williamson's challenge. Williamson himself does not make this point, but I think it is important. 
 
 \refsection
 
