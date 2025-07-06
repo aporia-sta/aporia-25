@@ -6,12 +6,11 @@
 \section{Introduction}
 In his book \emph{Modal Logic as Metaphysics}, Timothy Williamson developed a series of arguments against contingentism and in favor of necessitism. I outline the two theses in the following: 
 \begin{quote}
-
-(Contingentism) $\Diamond \exists x \Diamond \neg \exists y x=y$ \\
-Informally, some things could have not existed. \\
-``The table could have been destroyed in the making process and therefore does not exist." \\
-(Necessitism) $\Box \forall x \Box \exists y x=y$  \\
-Informally, everything necessarily exists. \\
+(Contingentism) \hspace{\labelsep} $\Diamond \exists x \Diamond \neg \exists y x=y$ \smallskip \\
+Informally, some things could have not existed. \smallskip \\
+``The table could have been destroyed in the making process and therefore does not exist." \bigskip \\
+(Necessitism) \hspace{\labelsep} $\Box \forall x \Box \exists y x=y$.  \smallskip \\
+Informally, everything necessarily exists. \smallskip \\
 ``This table, the person John, and all other things exist necessarily."
 \end{quote}
 Williamson's arguments are complex and intricate. This paper will focus on one particular challenge he raised to contingentism in Chapter 6 of his book and various responses toward this challenge. The paper is structured as the following: Section 2 reconstructs Williamson's challenge; Section 3 explains two ``trivialization" worries about this challenge and respond to them on Williamson's behalf; Section 4 develops a substantive response to Williamson's challenge and criticize it on Williamson's behalf. I argue that Williamson's challenge is successful and contingentists have considerable dialectical disadvantages.  
@@ -20,43 +19,46 @@ Williamson's arguments are complex and intricate. This paper will focus on one p
 Williamson raised a challenge to contingentists who accept (Comp_M) in high-order modal logic.\footnote{The background logic Williamson assumes is the one developed in his Chapter 5, p. 225. What is of significance is that the underlying modal logic is S5. This paper will not tap into the debate of which modal logic is the correct modal logic. I will assume Williamson's logic and develop challenges and responses.}
 Below is (Comp_M): 
 \begin{quote}
-(Comp_M) $\vdash \exists X \Box \forall x (Xx \ba A)$ where $A$ is a metalinguistic variable ranging over formulas. 
+(Comp_M) \hspace{\labelsep} $\vdash \exists X \Box \forall x (Xx \ba A)$ \smallskip \\ where $A$ is a metalinguistic variable ranging over formulas. 
 \end{quote}
 Informally, (Comp_M) says that for any formula $A$, there is some property that something instantiates just in case $A$ is true.
 
 I will first say something to motivate (Comp_M) before getting into Williamson's challenge using this principle. For one, (Comp_M) is a very attractive higher-order logic principle, for it says roughly that given any formula A, one can define a property such that necessarily, something has it just in case A is true. Intuitively, this seems true. We frequently define complex properties using this way. Given an open formula, for example, ``$x$ is white and $x$ is big", certainly there is some property $P$ such that necessarily, a thing $y$ has $P$ iff $y$ is white and $y$ is big. In other words, it seems that we should be able to use any formula A to give the necessary and sufficient conditions for something having a certain property. 
 
-Further, we need (Comp_M) to capture compelling natural language inferences, for example the following: 
+Further, we need (Comp_M) to capture compelling natural language inferences, for example the following:\footnote{Timothy Williamson, \textit{Modal Logic as Metaphysics} (Oxford University Press, 2013), p. 227.} 
+
 \begin{quote}
-P1. Alice doesn't smoke cigar but she could have done. ($\neg Sa \wedge \Diamond Sa$) \\
-C. Alice doesn't do something she could have done.\footnote{Timothy Williamson, \textit{Modal Logic as Metaphysics} (Oxford University Press, 2013), p. 227.} ( $\exists X (\neg Xa \wedge \Diamond Xa)$ )
+\begin{tabulary}{\textwidth}{lLr}
+P$1$. & Alice doesn't smoke a cigar, but she could have done so. & ($\neg Sa \wedge \Diamond Sa$) \\
+C. & Alice doesn't do something she could have done. & ( $\exists X (\neg Xa \wedge \Diamond Xa)$ )
+\end{tabulary}
 \end{quote}
 This inference is valid. To capture this, we need precisely an instance of (Comp_M): $\exists X \Box \forall x (Xx \ba \neg Sx \wedge \Diamond Sx)$.\footnote{One might argue that this valid inference can be equally captured by adding an existential generalization axiom to the logic. I just want to point out that this EG axiom is in the exact same spirit as (Comp_M) here: they are both saying that we can form complex properties from simpler ones. So they are not in tension: if one accepts one, one should have reasons to accept the other. } 
 Finally, more generally, (Comp_M) is an example of comprehension principles for higher-order logic (even for non-modal logic). Standard second-order non-modal logic usually has comprehension principles of similar form: given any formula $A$, $\exists P \forall x (Px \ba A)$. This ensures that the logic has enough power to prove important theorems  that intuitively needs to be provable. For example, second-order Peano arithmetic typically contain the following Induction axiom: 
 \begin{quote}
-(Induction Axiom) $\vdash \forall P \forall x (P(\mathbf{0}) \wedge (P(x) \ra P(x+1)) \ra \forall x P(x))$ 
+(Induction Axiom) \hspace{\labelsep}  $\vdash \forall P \forall x (P(\mathbf{0}) \wedge (P(x) \ra P(x+1)) \ra \forall x P(x))$ 
 \end{quote}
 Now suppose I have the following formula: $x$ is even or $x$ is odd. Certainly, every natural number has this property: being either even or odd. However, the formula itself cannot instantiate the induction axiom given above, as it is a formula not a predicate. With the comprehension principle, we have: $\exists Q \forall x (Qx \ba x $ is even or $ x $ is odd)$ $. Then we can fix on this property $Q$ and use it to instantiate the induction axiom.\footnote{I am using a very informal argument here to motivate and illustrate the use of comprehension principles. For one, ``even" and ``odd" are not primitive in the formal language of arithmetic, but must be defined. For another, the exact proof does not go the way the informal illustration went. However, these are technical details irrelevant for illustrating the use of comprehension principles, so I will not go into them here.}
 This shows again that (Comp_M) is not some novel/strange principle that Williamson cooked up but a typical example of logical principles in higher-order logic. So to sum up, (Comp_M) is a very natural and useful logical principle that we want to add to our higher-order modal logic. 
 
 Now we can move on to reconstruct Williamson's challenge. Suppose we instantiate $A$ with $x=y$. We will derive the following:
 \begin{quote}
-(Haecceity) $\Box \forall y \Box \exists X \Box \forall x (Xx \ba x=y)$ \footnote{Necessitation is: if $\vdash A$, then $\vdash \Box A$; Universal Quantifier Rule is: if $\vdash A$, then $\forall x A$. }
+(Haecceity) \hspace{\labelsep} $\Box \forall y \Box \exists X \Box \forall x (Xx \ba x=y)$ \footnote{Necessitation is: if $\vdash A$, then $\vdash \Box A$; Universal Quantifier Rule is: if $\vdash A$, then $\forall x A$. }
 \end{quote}
 Informally, this says that necessarily everything necessarily has some property such that having this property is necessary and sufficient for being that thing. This property (of necessary and sufficient for being this thing) can be called the haecceity of that individual, following previous literature. 
 
 Next, we can introduce some terminology: let $Haec(X)(y)$ abbreviate $\Box \forall x (Xx \ba x=y)$, informally, ``X is the haecceity of y"; $Tra(X)(y)$ abbreviates $Haec(X)(y) \wedge \neg \Diamond \exists z (Haec(X)(z) \wedge y \neq z)$, informally ``X tracks y". Then, we have: 
 \begin{quote}
-(Tracking) $\vdash Haec(X)(y) \ra \Box Tra(X)(y))$\footnote{I include a full proof in the Appendix (Section 6), and say more about the significance of the proof.}
-(Informally, ``my haecceity necessarily tracks me.") 
+(Tracking)  \hspace{\labelsep} $\vdash Haec(X)(y) \ra \Box Tra(X)(y))$\footnote{I include a full proof in the Appendix (Section 6), and say more about the significance of the proof.} \smallskip \\
+Informally, ``my haecceity necessarily tracks me."
 \end{quote}
 Then consider an individual $o$ (say, John). By the above theorems, we have: 
 \begin{quote}
-($o$-Haecceity) $\vdash \Box \exists X Haec(X)(o)$\footnote{We here instantiate (Haecceity) with $o$.}
+($o$-Haecceity) \hspace{\labelsep} $\vdash \Box \exists X Haec(X)(o)$\footnote{We here instantiate (Haecceity) with $o$.}
 \end{quote}
 Putting the above two theorems together, we can derive: 
 \begin{quote}
-($o$-Tracking) $\Box \exists X Tra(X)(o)$
+($o$-Tracking)  \hspace{\labelsep} $\Box \exists X Tra(X)(o)$
 \end{quote}
 Now the challenge according to Williamson is this: 
 \begin{quote}
@@ -82,7 +84,7 @@ First, adopting a minimalist response does not refute or falsify contingentism. 
 Here is an analogy with the Supervenience Challenge to metaethical non-naturalism, the thesis that moral properties are sui generic non-natural properties. The Supervenience Challenge is also an explanatory challenge. The Supervenience Thesis (abbreviated as ``(Supervenience)") of the moral properties on the natural properties claims that two objects cannot differ in their moral properties unless they differ in some natural properties.\footnote{For a more concrete example, we can imagine John and Bill, who are students in the same class. They both arrive at class on time, handed in assignments on time, etc. Now if the teacher start to punish John for alleged moral reasons, he is rightly to object that the teacher's moral assessment is groundless: what could possibly distinguish him from Bill morally? For a more abstract example, one can imagine John in our world and John' in another possible world. Suppose they do exactly the same things and have the same intentions, etc. It seems that they must receive the same moral evaluation (whether that is virtuous or evil): what could possibly distinguish John from John' morally? \\
 Here is (Supervenience) formulated in higher-order logic just to draw out the analogy with the current case more clearly: 
 \begin{quote}
-(ST) $\Box \forall X (Moral(X) \ra \forall x (Xx \ra \exists Y (Natural(Y) \wedge Yx \wedge \Box \forall y (Yy \ra Xy))))$
+(ST) \hspace{\labelsep} $\Box \forall X (Moral(X) \ra \forall x (Xx \ra \exists Y (Natural(Y) \wedge Yx \wedge \Box \forall y (Yy \ra Xy))))$
 \end{quote}} 
 Here the challenge for non-naturalism is to explain why (Supervenience) holds. The key is not the first box since that is usually understood to be conceptual necessity but the second box representing metaphysical necessity.\footnote{Note that contingentists cannot appeal to conceptual necessity or facts of meaning to explain ($o$-tracking) since all of the boxes in the theorems refer to metaphysical necessity. At least as Williamson framed the debate, contingentism and necessitism are full-blown metaphysical theories about the world. I suspect that there are ways to think about this debate using conceptual methods, which will be beyond the scope of this paper but interesting to explore.}
 In other words, why the instantiation of natural property necessitate the instantiation of some non-natural property? Just like the minimalist sketched above, some non-naturalists have tried to argue that (Supervenience) does not need an explanation. It is just a fact about the metaphysical structure of the world. This quietist response does not falsify non-naturalism. It just puts non-naturalism in a dialectically weaker position, especially when there are alternative theories which offer an explanation: naturalism does this by identifying moral properties and natural ones. 
@@ -98,9 +100,11 @@ Firstly, it seems that the logical consequence explanation does not give us a de
 
 Secondly, I worry that logical consequence is too lax an explanatory basis; that it generates bad explanations. 
 Here is an example that I have in mind:
+
 \begin{quote}
-(Racist Explanation). The Racists believes that every member of race A is evil. Consequently, he believes that a member of A $o$ is evil. When asked why he thinks $o$ is evil and consequently refused to offer $o$ equal payment/respect as other employees, the Racist says, ``Well, this is a logical consequence of my belief. What more do you want me to explain?''
+(Racist Explanation). \hspace{\labelsep} The Racists believes that every member of race A is evil. Consequently, he believes that a member of A $o$ is evil. When asked why he thinks $o$ is evil and consequently refused to offer $o$ equal payment/respect as other employees, the Racist says, ``Well, this is a logical consequence of my belief. What more do you want me to explain?''
 \end{quote}
+
 There is something wrong with both explanations.\footnote{Of course the Racist is subject to my previous challenge as well: I can simply ask the Racist why he believes that every member of race A is evil in the first place. He is not discharged of explanatory demand. But here I am developing a different problem for the Racist.} 
 One, what validates the Racist's universal belief is precisely the character of each individual. Thus, the Racist is not entitled to appeal to this universal belief as an explanation of his specific belief. Two, the Racist's belief attributes some structure to human beings in general and to particular individuals like $o$. He cannot simply ignore this structure by appealing to the general principle that attributes this structure. He needs to look at this specific person and explain why the ``evil" structure is really there, as his theory claims it is. 
 One can now see the same problems hold for contingentism too: (i) ($o$-tracking) is supposed to support (Comp_M), not the other round. Whether contingentism should accept (Comp_M) partially depends on whether they find its consequences compelling. The logical consequence explanation gets the order of explanation wrong; (ii) contingentists by adopting (Comp_m) attribute some metaphysical structure to individuals (like ($o$-tracking)), and they now need to find actual features of the world/individuals that support this structure in order to vindicate their theory. In either case, contingentists are not done.
@@ -181,10 +185,14 @@ In this paper, I have examined three responses to Williamson's Explanation Chall
 \subsection{The proof for (Tracking)}
 First, we can observe the following proof: \\
 \begin{quote}
-$\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash \bot \  $(Reductio, Conditional proof, Universal generalization)$  \\
-\vdash \Box \forall x (Xx \ba x=y) \ra \Box \forall z \neg (Haec(X)(z) \wedge z \neq y) \ \ \ $(K)$\\
-\vdash \Box \forall x (Xx \ba x=y) \ra \neg \Diamond \exists z (Haec(X)(z) \wedge z \neq y)  $\ \ \ (Equivalence)$ \\
-\vdash Haec(X)(y) \ra Tra(X)(y) $ \\
+\begin{tabulary}{\textwidth}{Lr}
+$\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash \bot \ $ & (Reductio, Cond. proof, Universal generalization)  \\
+\end{tabulary}
+\begin{tabulary}{\textwidth}{Lr}
+$\vdash \Box \forall x (Xx \ba x=y) \ra \Box \forall z \neg (Haec(X)(z) \wedge z \neq y)$ & (K) \\
+$\vdash \Box \forall x (Xx \ba x=y) \ra \neg \Diamond \exists z (Haec(X)(z) \wedge z \neq y)$ & (Equivalence) \\
+$\vdash Haec(X)(y) \ra Tra(X)(y)$ & \\
+\end{tabulary}
 \end{quote}
 Now I will show the first line. \\
 \begin{quote}
