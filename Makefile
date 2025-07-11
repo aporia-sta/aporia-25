@@ -3,6 +3,7 @@ default: 	target\
 
 SOURCES=images/\
 		papers/\
+		COVER.pdf\
 		main.tex\
 		00-titlepage.tex\
 		01-foreword.tex\
