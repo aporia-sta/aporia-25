@@ -17,6 +17,7 @@
 ]{geometry}
 % Fonts
 \usepackage{ebgaramond-maths}
+\usepackage{amsmath}
 \usepackage{amssymb}                    % Math symbols (e.g. therefore)
 \usepackage{enumitem}                   % indenting next line of list
 \usepackage[scale=0.78]{plex-mono}      % Monospace font
@@ -49,7 +50,10 @@
 \usepackage{suffix}
 % for list processing tools
 \usepackage{etoolbox}
-
+% for TikZ figures
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{trees}
 % Gap definitions
 \def \hangingindent {3em}
 \def \credgap {15pt}
@@ -110,6 +114,50 @@
 % Define refsection
 \def \refsection {\newpage\section*{Bibliography}}
 
+% Packages/declarations required by paper 3
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsmath} 
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{turnstile}
+\usepackage{array}
+\usepackage{stmaryrd}
+\usepackage[normalem]{ulem}
+\usepackage{bussproofs}
+\usepackage[linguistics]{forest}
+\usepackage{tipa}
+\usepackage{tabulary}
+\forestset{
+fairly nice empty nodes/.style={
+delay={where content={}
+{shape=coordinate, for siblings={anchor=north}}{}},
+for tree={s sep=4mm}
+}
+}
+\usepackage{gb4e}
+\usepackage{cgloss4e}
+\usepackage{drs}
+\usepackage[stable]{footmisc}
+\newcommand{\lsv}{\llbracket}
+\newcommand{\rsv}{\rrbracket}
+\newcommand{\la}{\leftarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ba}{\leftrightarrow}
+\newcommand{\Ba}{\Leftrightarrow}
+\newcommand{\lag}{\langle}
+\newcommand{\rag}{\rangle}
+\newcommand{\lam}{\lambda}
+\DeclareSymbolFont{symbolsC}{U}{txsyc}{m}{n}
+\DeclareMathSymbol{\strictif}{\mathrel}{symbolsC}{74}
+\DeclareMathSymbol{\boxright}{\mathrel}{symbolsC}{128}
+\DeclareMathSymbol{\boxRight}{\mathrel}{symbolsC}{136} % Lewis’s stronger ‘would’ counterfactual
+\DeclareMathSymbol{\diamondRight}{\mathrel}{symbolsC}{140} % Lewis’s stronger ‘might’ counterfactual
+\DeclareMathSymbol{\diamonddot}{\mathord}{symbolsC}{144} % Lewis’s inner necessity
+
 % MAIN
 \begin{document}
 \includepdf{COVER.pdf}
@@ -125,6 +173,12 @@
 
 \mainmatter
 \include{papers/1}
+  \begingroup
+  \let\mathit\mathrm
+  \let\mathnormal\mathrm
+\include{papers/2}
+\endgroup
+\include{papers/3}
 \include{papers/4}
 
 \backmatter
@@ -132,3 +186,8 @@
 \cleardoublepage
 \include{99-rear-cover}
 \end{document}
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: "../main"
+%%% End:
