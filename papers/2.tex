@@ -57,7 +57,7 @@ problem}. Consider a series of people of descending heights by 1cm. The
 first is clearly tall (200cm) and the last is clearly not (120cm). Since
 no known boundaries exist, vague predicates are tolerant - a small
 change will not alter the application. Thus, by inductive step, for any
-case $\mathbf{n}$, `if $\mathbf{n}$ is tall then $\mathbf{n+1}$ is tall'.
+case $\mathbf{n}$, `if $\mathbf{n}$ is tall then $\mathbf{n}+1$ is tall'.
 Starting at 200cm is tall, via a series of conditionals, you validly
 conclude that 120cm is tall. However, this is a contradiction since
 120cm is clearly not tall.\footnote{Fine, \emph{Vagueness}, 3-7.} This
@@ -125,9 +125,9 @@ these; instead, all precisifications are equally good.\footnote{Keefe,
 
 Supervaluationists provide semantics for vague predicates, identifying
 truth with super-truth by considering all possible precisifications.
-$\mathbf{Fa}$ is super-true (-false) iff $\mathbf{F}$ is true (false) of
+$F\mathbf{a}$ is super-true (-false) iff $F$ is true (false) of
 $\mathbf{a}$ under all complete and admissible precisifications.
-$\mathbf{Fa}$ is neither true nor false iff $\mathbf{F}$ is true of
+$F\mathbf{a}$ is neither true nor false iff $F$ is true of
 $\mathbf{a}$ under some precisifications and false of $\mathbf{a}$ under
 others.\footnote{Keefe, \emph{Theories of Vagueness}, 154.}
 
@@ -146,7 +146,7 @@ reason about vague predicates.\footnote{Rosanna Keefe, ``Vagueness:
   162-164.}
 
 This idea provides a straightforward solution to the Sorites. Namely,
-the inductive premise `if $F\mathbf{n}$ then $F(\mathbf{n+1})$' is
+the inductive premise `if $F\mathbf{n}$ then $F(\mathbf{n}+1)$' is
 super-false, since the antecedent will be true and the consequent false
 for some $\mathbf{n}$ under any complete and admissible precisification.
 This is because each precisification, being complete, provides a sharp
@@ -172,10 +172,10 @@ footnote\footnote{Consider the series of people of varying heights again
 The above metalanguage (talk of truth conditions) expresses the
 vagueness of the object language by dividing cases into three sharply
 bounded sets (true, false, borderline). This can be captured by adding a
-`definitely' D operator to the object language, which functions akin to
+`definitely' $D$ operator to the object language, which functions akin to
 modal necessity.
 
-The FOV of F is expressed as:
+The FOV of $F$ is expressed as:
 
 \begin{enumerate}
 \def\labelenumi{(\arabic{enumi})}
@@ -196,8 +196,8 @@ resolved by allowing the concept of `admissibility' itself to be vague,
 thus making the metalanguage vague.\footnote{Keefe, \emph{Theories of
   Vagueness}, 202-204.}
 
-Hence, the second-order vagueness of F is captured in the
-meta-metalanguage by expressing vagueness of DF (the metalanguage). This
+Hence, the second-order vagueness of $F$ is captured in the
+meta-metalanguage by expressing vagueness of $DF$ (the metalanguage). This
 yields the following five-fold classification:
 
 \begin{enumerate}
@@ -242,14 +242,14 @@ that both S4 and S5 principles fail.\footnote{Williamson,
 explanation.
 
 However, Williamson argues that this is not sufficient to solve the
-problem via the D* argument. He defines \(D^{*}F\) as an infinite
-conjunction $F \; \&  \; DF \; \& \; DDF \; \& \ldots \& \; D_{n}F$. Suppose
+problem via the $D^*$ argument. He defines $D^{*}F$ as an infinite
+conjunction $F \ \&  \ DF \ \& \ DDF \ \& \ldots \& \ D_{n}F$. Suppose
 precisifications (a), (b), and (c), where (a) admits (b), and (b) admits
 (c), but (a) does not admit (c), since admissibility is non-transitive.
-Suppose \(D^{*}F\) at (a). This means that
-$F, \; DF, \; DDF, \; \ldots, \; D_{n}F$ are true at (a). If $DF$ is true at
+Suppose $D^{*}F$ at (a). This means that
+$F, \ DF, \ DDF, \ \ldots, \ D_{n}F$ are true at (a). If $DF$ is true at
 (a), then $F$ is true at (b); if $DDF$ is true at (a), then $DF$
-is true at (b); and so on. Thus, $F, \; DF, \; DDF, \; \ldots, \; D_{n}F$ are
+is true at (b); and so on. Thus, $F, \ DF, \ DDF, \ \ldots, \ D_{n}F$ are
 all true at (b), and hence $D^{*}F$ is true at (b). The same reasoning
 applies to (c). Thus, if $D^{*}F$ is true at some precisification,
 then $D^{*}F$ is true at all precisifications. Hence, ${DD}^{*}F$ is
@@ -265,13 +265,13 @@ disappears.\footnote{Williamson, \emph{Vagueness}, 160.} This is
 because, for supervaluationism to succeed, each metalanguage must be
 vague. Thus, supervaluationists need a borderline case between
 $D^{*}F$ and $D^{*}{\sim}F$, namely
-${{\sim}DD}^{*}F \; \& \; {\sim}D{\sim}D^{*}F$. However, ${{\sim}DD}^{*}F$
+${{\sim}DD}^{*}F \ \& \ {\sim}D{\sim}D^{*}F$. However, ${{\sim}DD}^{*}F$
 collapses to ${{\sim}D}^{*}F$ by modus tollens on the S4 principle. ${{\sim}D}^{*}F$ then collapses to ${D\sim D}^{*}F$, given closure of
 D.\footnote{Patrick Greenough, ``Higher-Order Vagueness,''
   \emph{Proceedings of the Aristotelian Society, Supplementary Volumes}
   79 (2005): 183,
   \href{http://www.jstor.org/stable/4106939}.}
-In effect, ${{\sim}DD}^{*}F \; \& \; {\sim}D{\sim}D^{*}F$ reduces to ${D{\sim}D}^{*}F \; \& \; {\sim}D{\sim}D^{*}F$ which is a contradiction.
+In effect, ${{\sim}DD}^{*}F \ \& \ {\sim}D{\sim}D^{*}F$ reduces to ${D{\sim}D}^{*}F \ \& \ {\sim}D{\sim}D^{*}F$ which is a contradiction.
 Since there are no borderlines to $D^{*}F$, it is not vague.
 
 Williamson offers supervaluationists a way out: to give up semantic
@@ -954,7 +954,7 @@ classification:
 \begin{enumerate}
   \def\labelenumi{(\roman{enumi})}
 \item{$DF$ for definite positive cases.}
-\item{${\sim}DF \; \& \; {\sim}D{\sim}F$ for borderline cases.}
+\item{${\sim}DF \ \& \ {\sim}D{\sim}F$ for borderline cases.}
   \item{$D{\sim}F$ for negative cases.}
   \end{enumerate}
 
@@ -962,13 +962,13 @@ If (1) holds, it implies that at the second level, $DF$ and
 $D{\sim}F$ transform into $DDF$ and $DD{\sim}F$ (see proofs a and
 b). That is, the definite positive and definite negative case is
 definitely definite positive and definitely definite negative,
-subsequently. If (2) holds, it implies \(\sim DF\ \&\ \sim D\sim F\)
-${\sim}DF \; \& \; {\sim}D{\sim}F$ transforms into $D{\sim}DF \; \& \; D{\sim}D{\sim}F$ (see proof c). That is,
+subsequently. If (2) holds, it implies ${\sim}DF\ \&\  {\sim}D {\sim}F$
+${\sim}DF \ \& \ {\sim}D{\sim}F$ transforms into $D{\sim}DF \ \& \ D{\sim}D{\sim}F$ (see proof c). That is,
 the borderline case is definitely a borderline case. However,
 second-order vagueness would require two more categories -- the
 borderline between positive and borderline
-(${\sim}DDF \; \& \; {\sim}D{\sim}DF$) and the borderline between borderline
-and negative (${\sim}DD\sim F \; \& \; {\sim}D{\sim}D{\sim}F$). As a result,
+(${\sim}DDF \ \& \ {\sim}D{\sim}DF$) and the borderline between borderline
+and negative (${\sim}DD{\sim}F \ \& \ {\sim}D{\sim}D{\sim}F$). As a result,
 sharp boundaries are drawn between the three categories since there are
 no cases between them.
 
