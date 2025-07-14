@@ -185,14 +185,14 @@ In this paper, I have examined three responses to Williamson's Explanation Chall
 \section{Appendix}
 \setlength{\tabcolsep}{0pt}
 \subsection{The proof for (Tracking)}
-First, we can observe the following proof: \\
+First, we can observe the following proof: 
 \begin{quote}
-\begin{tabulary}{\textwidth}{Lr}
+\begin{tabulary}{\textwidth}{p{0.457\textwidth}r}
 $\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash \bot \ $ & (Reductio, Cond. proof, Universal generalization)  \\
 \end{tabulary}
-\begin{tabulary}{\textwidth}{Lr}
+\begin{tabulary}{\textwidth}{p{0.805\textwidth}r}
 $\vdash \Box \forall x (Xx \ba x=y) \ra \Box \forall z \neg (Haec(X)(z) \wedge z \neq y)$ & (K) \\
-$\vdash \Box \forall x (Xx \ba x=y) \ra \neg \Diamond \exists z (Haec(X)(z) \wedge z \neq y)$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ & (Equivalence) \\
+$\vdash \Box \forall x (Xx \ba x=y) \ra \neg \Diamond \exists z (Haec(X)(z) \wedge z \neq y)$\ & (Equivalence) \\
 $\vdash Haec(X)(y) \ra Tra(X)(y)$& \\
 \end{tabulary} % terrible hack but it fixed the rendering, I am very sorry Mohit
 \end{quote}
@@ -207,7 +207,7 @@ $\forall x (Xx \ba x=y), Haec(X)(z) \wedge z \neq y \vdash Xy \ba y=y \\
 \end{quote}
 Then, from $\vdash Haec(X)(y) \ra Tra(X)(y)$, we can observe that: \\
 \begin{quote}
-\begin{tabulary}{\textwidth}{LR}
+\begin{tabulary}{\textwidth}{p{0.7\textwidth}R}
 $\vdash \Box Haec(X)(y) \ra \Box Tra(X)(y)$ & (K)  \\
 $\vdash \Box \forall x (Xx \ba x=y) \ra \Box \Box \forall x (Xx \ba x=y)$ & (\textbf{4})\\
 $\vdash Haec(X)(y) \ra \Box Haec(X)(y)$ & (Chaining conditionals) \\
@@ -216,7 +216,7 @@ $\vdash Haec(X)(y) \ra \Box Tra(X)(y)$ &
 \end{quote}
 \subsection{The proof for (o-Tracking)} 
 \begin{quote}
-\begin{tabulary}{\textwidth}{LR}
+\begin{tabulary}{\textwidth}{p{0.705\textwidth}R}
 $\vdash Haec(X)(o) \ra Tra(X)(o)$ & (Proved above) \\
 $\vdash \exists X Haec(X)(o) \ra \exists X Tra(X)(o)$ & (Derivable from $\forall$ rule) \\
 $\vdash \Box \exists X Haec(X)(o) \ra \Box \exists X Tra(X)(o)$ & (K)\\
